@@ -7,14 +7,6 @@ const span_width5 = document.querySelectorAll('.spans-width5');
 const span_width6 = document.querySelectorAll('.spans-width6');
 const span_width7 = document.querySelectorAll('.spans-width7');
 const span_width8 = document.querySelectorAll('.spans-width8');
-const span_height1 = document.querySelectorAll('.spans-height1');
-const span_height2 = document.querySelectorAll('.spans-height2');
-const span_height3 = document.querySelectorAll('.spans-height3');
-const span_height4 = document.querySelectorAll('.spans-height4');
-const span_height5 = document.querySelectorAll('.spans-height5');
-const span_height6 = document.querySelectorAll('.spans-height6');
-const span_height7 = document.querySelectorAll('.spans-height7');
-const span_height8 = document.querySelectorAll('.spans-height8');
 const button1 = document.querySelector('.button1');
 const button2 = document.querySelector('.button2');
 const button3 = document.querySelector('.button3');
@@ -114,31 +106,38 @@ button3.addEventListener('click', () => {
         if (arr[i - 2]) {
           if (arr[i - 2][j + 1]) {
             arr[i - 2][j + 1].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-          }}
+          }
+        }
         if (arr[i - 1]) {
           if (arr[i - 1][j - 2]) {
             arr[i - 1][j - 2].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-          };};
+          };
+        };
         if (arr[i - 1]) {
           if (arr[i - 1][j + 2]) {
             arr[i - 1][j + 2].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-          }};
+          }
+        };
         if (arr[i + 2]) {
           if (arr[i + 2][j + 1]) {
             arr[i + 2][j + 1].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-          }}
+          }
+        }
         if (arr[i + 2]) {
           if (arr[i + 2][j - 1]) {
             arr[i + 2][j - 1].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-          }};
+          }
+        };
         if (arr[i + 1]) {
           if (arr[i + 1][j + 2]) {
             arr[i + 1][j + 2].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-          }}
+          }
+        }
         if (arr[i + 1]) {
           if (arr[i + 1][j - 2]) {
             arr[i + 1][j - 2].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-          }}
+          }
+        }
         if (arr[i - 2]) {
           if (arr[i - 2][j - 1]) {
             arr[i - 2][j - 1].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
