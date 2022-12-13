@@ -8,9 +8,9 @@ img {
 }
 
 .container {
-  width: 520px;
+  width: 540px;
   margin: auto;
-  height: 520px;
+  height: 540px;
   background-color: rgb(144, 122, 81);
   padding: 20px;
   margin-top: 40px;
@@ -20,6 +20,7 @@ img {
   align-items: center;
   justify-content: space-between;
   color: rgb(8, 50, 83);
+  gap: 2px;
 }
 
 .spans {
