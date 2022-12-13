@@ -118,11 +118,11 @@ button3.addEventListener('click', () => {
         if (arr[i - 1]) {
           if (arr[i - 1][j - 2]) {
             arr[i - 1][j - 2].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-          }}
+          };};
         if (arr[i - 1]) {
           if (arr[i - 1][j + 2]) {
             arr[i - 1][j + 2].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-          }}
+          }};
         if (arr[i + 2]) {
           if (arr[i + 2][j + 1]) {
             arr[i + 2][j + 1].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
@@ -130,7 +130,7 @@ button3.addEventListener('click', () => {
         if (arr[i + 2]) {
           if (arr[i + 2][j - 1]) {
             arr[i + 2][j - 1].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-          }}
+          }};
         if (arr[i + 1]) {
           if (arr[i + 1][j + 2]) {
             arr[i + 1][j + 2].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
