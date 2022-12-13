@@ -50,10 +50,7 @@ function render() {
 }
 render()
 button1.addEventListener('click', () => {
-  button2.style.border = ''
-  button3.style.border = ''
-  button4.style.border = ''
-  button1.style.border = '5px solid rgb(144, 122, 81)';
+  button2.style.border = '', button3.style.border = '', button4.style.border = '', button1.style.border = '5px solid rgb(144, 122, 81)';
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr[i].length; j++) {
       arr[i][j].addEventListener('mouseover', () => {
@@ -96,10 +93,7 @@ function fel(i, j) {
   }
 }
 button2.addEventListener('click', () => {
-  button2.style.border = '5px solid rgb(144, 122, 81)'
-  button3.style.border = ''
-  button4.style.border = ''
-  button1.style.border = '';
+  button2.style.border = '5px solid rgb(144, 122, 81)', button3.style.border = '', button4.style.border = '', button1.style.border = '';
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr[i].length; j++) {
       arr[i][j].addEventListener('mouseover', () => {
@@ -111,55 +105,57 @@ button2.addEventListener('click', () => {
   }
 })
 button3.addEventListener('click', () => {
-  button2.style.border = ''
-  button3.style.border = '5px solid rgb(144, 122, 81)'
-  button4.style.border = ''
-  button1.style.border = '';
+  button2.style.border = '', button3.style.border = '5px solid rgb(144, 122, 81)', button4.style.border = '', button1.style.border = '';
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr[i].length; j++) {
       arr[i][j].addEventListener('mouseover', () => {
         render()
         arr[i][j].style.backgroundColor = 'rgba(57, 181, 230, 0.233)';
-        if (arr[i - 2][j - 1]) {
-          arr[i - 2][j - 1].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-        }
-        if (arr[i - 2][j + 1]) {
-          arr[i - 2][j + 1].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-        }
-        if (arr[i - 1][j - 2]) {
-          arr[i - 1][j - 2].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-        }
-        if (arr[i - 1][j + 2]) {
-          arr[i - 1][j + 2].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-        }
-        if (arr[i + 2][j + 1]) {
-          arr[i + 2][j + 1].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-        }
-        if (arr[i + 2][j - 1]) {
-          arr[i + 2][j - 1].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-        }
-        if (arr[i + 1][j + 2]) {
-          arr[i + 1][j + 2].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
-        }
-        if (arr[i + 1][j - 2]) {
-          arr[i + 1][j - 2].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
+        if (arr[i - 2]) {
+          if (arr[i - 2][j + 1]) {
+            arr[i - 2][j + 1].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
+          }}
+        if (arr[i - 1]) {
+          if (arr[i - 1][j - 2]) {
+            arr[i - 1][j - 2].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
+          }}
+        if (arr[i - 1]) {
+          if (arr[i - 1][j + 2]) {
+            arr[i - 1][j + 2].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
+          }}
+        if (arr[i + 2]) {
+          if (arr[i + 2][j + 1]) {
+            arr[i + 2][j + 1].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
+          }}
+        if (arr[i + 2]) {
+          if (arr[i + 2][j - 1]) {
+            arr[i + 2][j - 1].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
+          }}
+        if (arr[i + 1]) {
+          if (arr[i + 1][j + 2]) {
+            arr[i + 1][j + 2].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
+          }}
+        if (arr[i + 1]) {
+          if (arr[i + 1][j - 2]) {
+            arr[i + 1][j - 2].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
+          }}
+        if (arr[i - 2]) {
+          if (arr[i - 2][j - 1]) {
+            arr[i - 2][j - 1].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
+          }
         }
       })
     }
   }
 })
 button4.addEventListener('click', () => {
-  button2.style.border = ''
-  button3.style.border = ''
-  button4.style.border = '5px solid rgb(144, 122, 81)'
-  button1.style.border = '';
+  button2.style.border = '', button3.style.border = '', button1.style.border = '', button4.style.border = '5px solid rgb(144, 122, 81)'
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr[i].length; j++) {
       arr[i][j].addEventListener('mouseover', () => {
         render()
         arr[i][j].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
         tura(i, j)
-
       })
     }
   }
