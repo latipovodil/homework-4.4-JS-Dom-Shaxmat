@@ -45,7 +45,7 @@ img {
 .button3:hover,
 .button4:hover {
   border: 2px solid rgb(144, 122, 81);
-  
+
 }
 
 
@@ -69,3 +69,37 @@ body {
   right: 20%;
   top: 10%;
 }
+
+
+.fel {
+  background-image: url('../img/fel.png');
+  background-size: contain;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.farzi {
+  background-image: url('../img/vazir.png');
+  background-size: contain;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ot {
+  background-image: url('../img/ot.png'); 
+  background-size: contain;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tura {
+  background-image: url('../img/tura.png');
+  background-size: contain;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+

@@ -13,7 +13,6 @@ const button3 = document.querySelector('.button3');
 const button4 = document.querySelector('.button4');
 const arr = [];
 arr.push(span_width1, span_width2, span_width3, span_width4, span_width5, span_width6, span_width7, span_width8);
-console.log(arr);
 function render() {
   for (let i = 0; i < 9; i++) {
     if (i == 0) {
@@ -47,6 +46,13 @@ button1.addEventListener('click', () => {
     for (let j = 0; j < arr[i].length; j++) {
       arr[i][j].addEventListener('mouseover', () => {
         render()
+        for (const l of all_span) {
+          l.classList.remove('ot');
+          l.classList.remove('fel');
+          l.classList.remove('farzi');
+          l.classList.remove('tura');
+        }
+        arr[i][j].classList.add('farzi')
         arr[i][j].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
         tura(i, j)
         fel(i, j)
@@ -90,6 +96,13 @@ button2.addEventListener('click', () => {
     for (let j = 0; j < arr[i].length; j++) {
       arr[i][j].addEventListener('mouseover', () => {
         render()
+        for (const l of all_span) {
+          l.classList.remove('ot');
+          l.classList.remove('fel');
+          l.classList.remove('farzi');
+          l.classList.remove('tura');
+        }
+        arr[i][j].classList.add('fel')
         arr[i][j].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
         fel(i, j)
       })
@@ -102,6 +115,13 @@ button3.addEventListener('click', () => {
     for (let j = 0; j < arr[i].length; j++) {
       arr[i][j].addEventListener('mouseover', () => {
         render()
+        for (const l of all_span) {
+          l.classList.remove('ot');
+          l.classList.remove('fel');
+          l.classList.remove('farzi');
+          l.classList.remove('tura');
+        }
+        arr[i][j].classList.add('ot')
         arr[i][j].style.backgroundColor = 'rgba(57, 181, 230, 0.233)';
         if (arr[i - 2]) {
           if (arr[i - 2][j + 1]) {
@@ -155,6 +175,13 @@ button4.addEventListener('click', () => {
         render()
         arr[i][j].style.backgroundColor = 'rgba(57, 181, 230, 0.233)'
         tura(i, j)
+        for (const l of all_span) {
+          l.classList.remove('ot');
+          l.classList.remove('fel');
+          l.classList.remove('farzi');
+          l.classList.remove('tura');
+        }
+        arr[i][j].classList.add('tura')
       })
     }
   }
